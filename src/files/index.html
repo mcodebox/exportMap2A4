@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Map</title>
+  <link rel="stylesheet" href="css/bundle.min.css">
+  <link rel="stylesheet" href="css/main.min.css">
+</head>
+<body>
+  <div id="menu">
+    <button id="exportPNGbtn" onclick="exportPNG();">Export PNG</button>
+    <button id="exportPDFbtn" onclick="exportPDF();">Export PDF</button>
+    <input type="button" id="rotateMAPbtn" value="Horizontal" onclick="rotateMap();">
+    <form id="drawSelector" class="form-inline">
+      Draw:
+      <select name="" id="type">
+        <option value="None">None</option>
+        <option value="Point">Point</option>
+        <option value="LineString">Line</option>
+        <option value="Polygon">Polygon</option>
+        <option value="Circle">Circle</option>
+      </select>
+    </form>
+    <button id="clearMAPbtn" onclick="clearMAP();">Clear Map</button>
+  </div>
+  <div id="js-map" class="map"></div>
+  <script src="js/bundle.min.js" charset="utf-8"></script>
+  <script src="js/main.min.js" charset="utf-8"></script>
+</body>
+</html>
